@@ -9,11 +9,12 @@ from typing import Literal
 import os
 
 # --- Configuration ---
-# Chemin de base = dossier où se trouve ce script
-BASE_DIR = os.path.dirname(__file__)
+# app_main.py
+import os # Add this import
 
-# Construire les chemins relatifs
-MODEL_PATH  = os.path.join(BASE_DIR, "Logistic_Regression.joblib")
+# --- Configuration ---
+BASE_DIR = os.path.dirname(os.path.abspath(__file__)) # Gets the directory of the current file
+MODEL_PATH = os.path.join(BASE_DIR, "Logistic_Regression.joblib")
 SCALER_PATH = os.path.join(BASE_DIR, "heart_disease_scaler.joblib")
 
 # --- CRITICAL: This list uses the SHORT FRENCH feature names based on your updated CSV ---
