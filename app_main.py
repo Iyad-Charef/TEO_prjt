@@ -13,8 +13,8 @@ import os
 BASE_DIR = os.path.dirname(__file__)
 
 # Construire les chemins relatifs
-MODEL_PATH  = os.path.join(BASE_DIR, "models", "Logistic_Regression.joblib")
-SCALER_PATH = os.path.join(BASE_DIR, "models", "heart_disease_scaler.joblib")
+MODEL_PATH  = os.path.join(BASE_DIR, "Logistic_Regression.joblib")
+SCALER_PATH = os.path.join(BASE_DIR, "heart_disease_scaler.joblib")
 
 # --- CRITICAL: This list uses the SHORT FRENCH feature names based on your updated CSV ---
 FINAL_FEATURE_NAMES = [
