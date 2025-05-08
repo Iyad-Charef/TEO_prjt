@@ -9,8 +9,6 @@ from typing import Literal
 import os
 
 # --- Configuration ---
-# app_main.py
-import os # Add this import
 
 # --- Configuration ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__)) # Gets the directory of the current file
