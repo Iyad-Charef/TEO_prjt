@@ -6,11 +6,15 @@ import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 from typing import Literal
+import os
 
 # --- Configuration ---
-# TODO: Update these paths to your actual saved model and scaler
-MODEL_PATH = r"C:\Users\iyadc\OneDrive\Documents\developing\TEO_prjt\Logistic_Regression.joblib"
-SCALER_PATH = r"C:\Users\iyadc\OneDrive\Documents\developing\TEO_prjt\heart_disease_scaler.joblib"
+# Chemin de base = dossier où se trouve ce script
+BASE_DIR = os.path.dirname(__file__)
+
+# Construire les chemins relatifs
+MODEL_PATH  = os.path.join(BASE_DIR, "models", "Logistic_Regression.joblib")
+SCALER_PATH = os.path.join(BASE_DIR, "models", "heart_disease_scaler.joblib")
 
 # --- CRITICAL: This list uses the SHORT FRENCH feature names based on your updated CSV ---
 FINAL_FEATURE_NAMES = [
